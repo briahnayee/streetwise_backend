@@ -15,6 +15,7 @@ router.get('/', async (req, res, next) => {
 router.post('/', async (req, res, next) => {
   const client = new Client(config);
   await client.connect();
+  // const filterDescription = 
   const query = `
     INSERT INTO pins (
       longitude,
